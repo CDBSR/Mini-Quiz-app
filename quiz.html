@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Management Page</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/quiz.css">
+</head>
+<body>
+    <div id="nav"></div>
+
+    <div class="container">
+        <h2>Manage Quiz</h2>
+        <form action="" id="quizForm">
+            <div class="form-group">
+                <label for="question">Question Statement:</label>
+                <input type="text" id="question" required>
+            </div>
+            <div class="form-group">
+                <label for="optionA">Option A:</label>
+                <input type="text" id="optionA" required>
+            </div>
+            <div class="form-group">
+                <label for="optionB">Option B:</label>
+                <input type="text" id="optionB" required>
+            </div>
+            <div class="form-group">
+                <label for="optionC">Option C:</label>
+                <input type="text" id="optionC" required>
+            </div>
+            <div class="form-group">
+                <label for="optionD">Option D:</label>
+                <input type="text" id="optionD" required>
+            </div>
+            <div class="form-group">
+                <label for="correctOption">Correct Option:</label>
+                <input type="text" id="correctOption" required>
+            </div>
+            <button type="submit" class="btn">Add Question</button>
+        </form>
+
+        <div class="grid" id="questionsGrid"></div>
+
+        <!-- making card -->
+        
+
+    </div>
+</body>
+<!-- <script src="./scripts/index.js" type="module"></script> -->
+<script src="./scripts/quiz.js" type="module"></script>
+</html>
