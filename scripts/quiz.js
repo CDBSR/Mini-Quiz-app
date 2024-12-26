@@ -19,13 +19,13 @@ let quizform = document.getElementById('quizForm');
 quizform.addEventListener('submit', async function (){
     event.preventDefault();
 
-    let q = document.getElementsById('question').value;
-    let optA  = document.getElementsById('optionA').value;
-    let optB = document.getElementsById('optionB').value;
-    let optC = document.getElementsById('optionC').value;
-    let optD = document.getElementsById('optionD').value;
-    let crrt = document.getElementsById('correctOption').value;
-    reviewstatus = false
+    let q = quizform.question.value;
+    let optA  = quizform.optionA.value;
+    let optB = quizform.optionB.value;
+    let optC = quizform.optionC.value;
+    let optD = quizform.optionD.value;
+    let crrt = quizform.correctOption.value;
+    let  reviewstatus = false
     const question = { q,optA, optB,optC,optD,crrt ,reviewstatus };
 
     try{
@@ -37,7 +37,7 @@ quizform.addEventListener('submit', async function (){
             body: JSON.stringify(question)
         });
         alert('Question Added');
-        getAllQuestions();
+        renderQuestions();
         //event.target.reset();
     } catch(err){
         console.log('Error in adding quetion:', err);
