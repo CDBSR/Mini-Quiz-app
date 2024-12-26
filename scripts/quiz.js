@@ -3,7 +3,7 @@ import { navbar } from "./navbar.js";
 
 navbar();
 
-const baseurl = "http://localhost:3000/questions";
+const baseurl = "https://bubbly-locrian-bellusaurus.glitch.me/questions";
 
 
 async function getAllQuestions(){
